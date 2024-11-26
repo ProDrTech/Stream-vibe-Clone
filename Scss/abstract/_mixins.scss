@@ -1,0 +1,16 @@
+@mixin media-xxl {
+    @media screen and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+
+@mixin flexBox {
+    display: flex;
+}

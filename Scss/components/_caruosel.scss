@@ -1,0 +1,65 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.caruosel {
+    border: 1px solid #1F1F1F;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #0F0F0F;
+
+    .arraw {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px;
+        background-color: #1A1A1A;
+        border-radius: 8px;
+        border: 1px solid #1F1F1F;
+    }
+
+    .hrs {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        div {
+            width: 16.33px;
+            height: 4px;
+            border-radius: 100px;
+            background-color: #333333;
+        }
+        div.active {
+            background-color: #E50000;
+            width: 23px;
+        }
+    }
+}
+
+@include mixins.media-xxl {
+    .caruosel {
+        gap: 12px;
+        padding: 12px;
+        border-radius: 10px;
+    
+        .arraw {
+            padding: 10px;
+            border-radius: 6px;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    
+        .hrs {
+            div {
+                width: 14px;
+            }
+            div.active {
+                width: 18px;
+            }
+        }
+    }
+}

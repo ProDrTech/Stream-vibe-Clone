@@ -1,0 +1,278 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.hero {
+    .wrapper {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .wrapper__fcard div,
+        .wrapper__scard div,
+        .wrapper__tcard div,
+        .wrapper__fourthcard div {
+            width: 195.56px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+        }
+
+        &__fcard,
+        &__scard,
+        &__tcard,
+        &__fourthcard {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        img[alt="top"] {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        img[alt="bottom"] {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        img[alt="center"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__content {
+        position: relative;
+        bottom: 60px;
+        text-align: center;
+
+        h1 {
+            font-size: 58px;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        p {
+            color: #999999;
+            width: 1010px;
+            margin: 0 auto;
+        }
+
+        span.p {
+            display: none;
+            color: #999999;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        p ~ div {
+            margin: 0 auto;
+            margin-top: 68.5px;
+            width: max-content;
+        }
+    }
+
+    &__category {
+        border: 1px solid red;
+    }
+}
+
+.hero-genre {
+    padding: 50px 129px 0;
+
+    &__wrapper {
+        position: relative;
+        height: 835px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        img[alt="container"] {
+            border-radius: 15px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        img[alt="bg"] {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 20px; left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        text-align: center;
+
+        h1 {
+            color: #fff;
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        p { 
+            margin-top: 4px;
+            color: #999;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    &__btns {
+        width: max-content;
+        margin: 30px auto 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .btns {
+            gap: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 24px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 8px;
+            background-color: #e50000;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+            background-color: #0f0f0f;
+            border-radius: 8px;
+            border: 1px solid #262626;
+            img {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}
+
+@include mixins.media-xxl {
+    .hero {
+        .wrapper {
+            height: 699px;
+            overflow: hidden;
+            gap: 10px;
+
+            .wrapper__fcard div,
+            .wrapper__scard div,
+            .wrapper__tcard div,
+            .wrapper__fourthcard div {
+                width: 151.11px;
+                height: 200px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 12px;
+            }
+
+            img[alt="center"] {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        &__content {
+            bottom: 100px;
+            h1 {
+                font-size: 48px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                width: 1250px;
+            }
+
+            p ~ div {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@include mixins.media-sm {
+    .hero {
+        .wrapper {
+            height: 450px;
+            gap: 10px;
+
+            .wrapper__fcard div,
+            .wrapper__scard div,
+            .wrapper__tcard div,
+            .wrapper__fourthcard div {
+                width: 134px;
+                height: 143px;
+            }
+
+            &__fcard,
+            &__scard,
+            &__tcard,
+            &__fourthcard {
+                width: 1286px;
+            }
+
+            img[alt="top"] {
+                width: max-content;
+                height: 500px;
+            }
+
+            img[alt="bottom"] {
+                width: max-content;
+                height: 354px;
+            }
+
+            img[alt="center"] {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        &__content {
+            h1 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                display: none;
+            }
+
+            span.p {
+                display: block;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            p ~ div {
+                margin-top: 30px;
+                font-size: 14px;
+            }
+        }
+    }
+}

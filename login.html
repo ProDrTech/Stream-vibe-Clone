@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--  
+        Links
+    -->
+        <!-- Site favicon -->
+        <link
+            rel="shortcut icon"
+            href="./Images/Icons/favicon.svg"
+            type="image/x-icon"
+        />
+        <!-- style -->
+        <link rel="stylesheet" href="./Css/style.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Aos style link -->
+        <link link />
+        <title>StreamVibe</title>
+    </head>
+    <body>
+        <!-- <Header> -->
+        <header class="container bg-trans loginHeader">
+            <div class="header__wrapper">
+                <a href="index.html">
+                    <img src="./Images/Logo.svg" alt="" />
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li>
+                            <a href="#">Movies & Shows</a>
+                        </li>
+                        <li><a href="#">Support</a></li>
+                        <li>
+                            <a href="#">Subscriptions</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a class="header__bars">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </a>
+            <!-- <div class="header__icons">
+                        <a href="#"><img src="./Images/Icons/lupa.svg" alt="lupa" /></a>
+                        <a href="#"
+                            ><img
+                                src="./Images/Icons/bildirishnoma.svg"
+                                alt="bildirishnoma"
+                        /></a>
+                    </div> -->
+            <div class="header__btns">
+                <a href="./singup.html">Sign Up</a>
+                <a href="./login.html" class="active">Login</a>
+            </div>
+        </header>
+        <!-- </Header> -->
+        <main>
+            <section class="login container">
+                <div class="login__wrapper">
+                    <div class="alert hide">
+                        <span class="fas fa-exclamation-circle"></span>
+                        <span class="msg">Warning</span>
+                        <span class="close-btn">
+                            <span class="fas fa-times"></span>
+                        </span>
+                    </div>
+                    <div class="alertSuccess hide">
+                        <span class="fas fa-check-circle"></span>
+                        <span class="msg">Successful!</span>
+                        <span class="close-btn">
+                            <span class="fas fa-times"></span>
+                        </span>
+                    </div>
+                    <form>
+                        <div class="login__content">
+                            <h1>Login</h1>
+                            <p>Welcome back! Please log in to access your account.</p>
+                        </div>
+                        <div class="login__form">
+                            <div class="login__inputs">
+                                <input type="text" placeholder="Enter User Name" required autocomplete="off">
+                                <div>
+                                    <input type="password" placeholder="Enter your Password" required autocomplete="off"> 
+                                    <img src="./Images/Icons/eye.svg" alt="eye">
+                                    <img src="./Images/Icons/hidden.svg" style="display: none;" alt="hidden">
+                                </div>
+                            </div>
+                            <p>Forgot Password?</p>
+                            <div class="login__register">
+                                <a>Login</a>
+                                <a href="./singup.html">Sign Up</a>
+                                <div div>
+                                    <div></div>
+                                    <span>Or Continue with</span>
+                                    <div></div>
+                                </div>
+                                <div class="login__social">
+                                    <div icon>
+                                        <img src="./Images/bg.svg" alt="bg">
+                                        <div><img src="./Images/Icons/google.svg" alt="google"></div>
+                                    </div>
+                                    <div icon>
+                                        <img src="./Images/bg.svg" alt="bg">
+                                        <div><img src="./Images/Icons/facebook1.svg" alt="google"></div>
+                                    </div>
+                                    <div icon>
+                                        <img src="./Images/bg.svg" alt="bg">
+                                        <div><img src="./Images/Icons/iphone.svg" alt="google"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="content container">
+                <div
+                    class="content__wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <div first>
+                        <div>
+                            <h4>Start your free trial today!</h4>
+                            <p>
+                                This is a clear and concise call to action that
+                                encourages users to sign up for a free trial of
+                                StreamVibe.
+                            </p>
+                        </div>
+                        <a href="#">Start a Free Trail</a>
+                    </div>
+                    <div class="content__imgs">
+                        <img
+                            class="first-img"
+                            src="./Images/Fade Out Left.svg"
+                            alt=""
+                        />
+                        <div second>
+                            <div data-first class="div"></div>
+                            <div data-second class="div"></div>
+                            <div data-thrind class="div"></div>
+                            <div data-fourth class="div"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer container">
+            <div class="footer__first">
+                <div one class="footer__div">
+                    <h5>Home</h5>
+                    <ul>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Devices</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div two class="footer__div">
+                    <h5>Movies</h5>
+                    <ul>
+                        <li><a href="#">Gernes</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">New Release</a></li>
+                        <li><a href="#">Popular</a></li>
+                    </ul>
+                </div>
+                <div three class="footer__div">
+                    <h5>Shows</h5>
+                    <ul>
+                        <li><a href="#">Gernes</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">New Release</a></li>
+                        <li><a href="#">Popular</a></li>
+                    </ul>
+                </div>
+                <div four class="footer__div">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div five class="footer__div">
+                    <h5>Subscription</h5>
+                    <ul>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Features</a></li>
+                    </ul>
+                </div>
+                <div six class="footer__div">
+                    <h5>Connect With Us</h5>
+                    <div class="footer__btns">
+                        <a href="https://t.me/designerwithair" target="_blank"
+                            ><img src="./Images/Icons/telegram.svg" alt=""
+                        /></a>
+                        <a href="tel:+998991234567" target="_blank"
+                            ><img src="./Images/Icons/call.svg" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="./Images/Icons/in.svg" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__second">
+                <h5>@2024 Streamvibe, All Rights Reserved</h5>
+                <ul>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Policy</li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./Js/heroDB.js"></script>
+        <script src="./Db/adminsDb.js"></script>
+        <script src="./Js/default.js"></script>
+        <script src="./Js/login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--  
+        Links
+    -->
+        <!-- Site favicon -->
+        <link
+            rel="shortcut icon"
+            href="./Images/Icons/favicon.svg"
+            type="image/x-icon"
+        />
+        <!-- style -->
+        <link rel="stylesheet" href="./Css/style.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Aos style link -->
+        <link link />
+        <title>StreamVibe</title>
+    </head>
+
+    <body>
+        <div class="weather">
+            <img src="./Images/weatherContainer.svg" alt="container" />
+            <div first>
+                <div>
+                    <p>Navoiy</p>
+                    <h3>Moment</h3>
+                </div>
+                <div>
+                    <h4 class="temp"></h4>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <Header> -->
+        <header class="header container bg-trans">
+            <div class="header__wrapper">
+                <a href="index.html">
+                    <img src="./Images/Logo.svg" alt="" />
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li>
+                            <a href="#">Movies & Shows</a>
+                        </li>
+                        <li><a href="#">Support</a></li>
+                        <li>
+                            <a href="#">Subscriptions</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a class="header__bars">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </a>
+            <!-- <div class="header__icons">
+                <a href="#"><img src="./Images/Icons/lupa.svg" alt="lupa" /></a>
+                <a href="#"
+                    ><img
+                        src="./Images/Icons/bildirishnoma.svg"
+                        alt="bildirishnoma"
+                /></a>
+            </div> -->
+            <div class="header__btns">
+                <a href="./singup.html">Sign Up</a>
+                <a href="./login.html" class="active">Login</a>
+            </div>
+        </header>
+        <!-- </Header> -->
+        <main>
+            <!-- hero -->
+            <section
+                class="hero container"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-offset="0"
+            >
+                <div class="wrapper" style="position: relative">
+                    <img src="./Images/Hero-card/Top.svg" alt="top" />
+                    <img src="./Images/Hero-card/Bottom.svg" alt="bottom" />
+                    <img
+                        src="./Images/Hero-card/Abstract Design.png"
+                        alt="center"
+                    />
+                    <div class="wrapper__fcard"></div>
+                    <div class="wrapper__scard"></div>
+                    <div class="wrapper__tcard"></div>
+                    <div class="wrapper__fourthcard"></div>
+                </div>
+                <div
+                    class="hero__content"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                >
+                    <h1 data-content>The Best Streaming Experience</h1>
+                    <p data-content>
+                        StreamVibe is the best streaming experience for watching
+                        your favorite movies and shows on demand, anytime,
+                        anywhere. With StreamVibe, you can enjoy a wide variety
+                        of content, including the latest blockbusters, classic
+                        movies, popular TV shows, and more. You can also create
+                        your own watchlists, so you can easily find the content
+                        you want to watch.
+                    </p>
+                    <span class="p">
+                        StreamVibe is the best streaming experience for watching
+                        your favorite movies and shows on demand, anytime,
+                        anywhere
+                    </span>
+                    <div data-content>
+                        <a href="#" class="btn">
+                            <img src="./Images/Icons/play.svg" alt="play" />
+                            <span>Start Watching Now</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- hero -->
+            <!-- Category -->
+            <section class="category container">
+                <div
+                    class="category__content"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                >
+                    <div class="category__heading">
+                        <h2>Explore our wide variety of categories</h2>
+                        <p>
+                            Whether you're looking for a comedy to make you
+                            laugh, a drama to make you think, or a documentary
+                            to learn something new
+                        </p>
+                    </div>
+                    <div class="caruosel">
+                        <div class="arraw left-arrow">
+                            <img
+                                src="./Images/Icons/left-arrow.svg"
+                                alt="left-arrow"
+                            />
+                        </div>
+                        <div class="hrs"></div>
+                        <div class="arraw right-arrow">
+                            <img
+                                src="./Images/Icons/right-arrow.svg"
+                                alt="right-arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="category__wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                ></div>
+                <div class="card-wrapper">
+                    <div class="card-carousel">
+                        <div class="arrow left">
+                            <i id="left" class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="arrow right">
+                            <i id="right" class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Category -->
+            <!-- Device -->
+            <section class="device container">
+                <div
+                    class="device__content"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                >
+                    <h2>
+                        We Provide you streaming experience across various
+                        devices.
+                    </h2>
+                    <p>
+                        With StreamVibe, you can enjoy your favorite movies and
+                        TV shows anytime, anywhere. Our platform is designed to
+                        be compatible with a wide range of devices, ensuring
+                        that you never miss a moment of entertainment.
+                    </p>
+                    <span class="p">
+                        With StreamVibe, you can enjoy your favorite movies and
+                        TV shows anytime, anywhere.
+                    </span>
+                </div>
+                <div
+                    class="device__wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <div class="device__card" data-aos="fade-right">
+                        <img
+                            class="device__img"
+                            src="./Images/Card.webp"
+                            alt=""
+                        />
+                        <div class="device__card-content">
+                            <div class="device__heading">
+                                <div>
+                                    <img
+                                        src="./Images/Icons/Icon tel.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <h3>Smartphones</h3>
+                            </div>
+                            <p>
+                                StreamVibe is optimized for both Android and iOS
+                                smartphones. Download our app from the Google
+                                Play Store or the Apple App Store
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="device__card"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"
+                    >
+                        <img
+                            class="device__img"
+                            src="./Images/Card.webp"
+                            alt=""
+                        />
+                        <div class="device__card-content">
+                            <div class="device__heading">
+                                <div>
+                                    <img
+                                        src="./Images/Icons/tablet.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <h3>Tablet</h3>
+                            </div>
+                            <p>
+                                StreamVibe is optimized for both Android and iOS
+                                smartphones. Download our app from the Google
+                                Play Store or the Apple App Store
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="device__card" data-aos="fade-left">
+                        <img
+                            class="device__img"
+                            src="./Images/Card.webp"
+                            alt=""
+                        />
+                        <div class="device__card-content">
+                            <div class="device__heading">
+                                <div>
+                                    <img src="./Images/Icons/tv.svg" alt="" />
+                                </div>
+                                <h3>Smart TV</h3>
+                            </div>
+                            <p>
+                                StreamVibe is optimized for both Android and iOS
+                                smartphones. Download our app from the Google
+                                Play Store or the Apple App Store
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="device__card" data-aos="fade-up-right">
+                        <img
+                            class="device__img"
+                            src="./Images/Card.webp"
+                            alt=""
+                        />
+                        <div class="device__card-content">
+                            <div class="device__heading">
+                                <div>
+                                    <img
+                                        src="./Images/Icons/laptop.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <h3>Laptops</h3>
+                            </div>
+                            <p>
+                                StreamVibe is optimized for both Android and iOS
+                                smartphones. Download our app from the Google
+                                Play Store or the Apple App Store
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="device__card" data-aos="zoom-out-up">
+                        <img
+                            class="device__img"
+                            src="./Images/Card.webp"
+                            alt=""
+                        />
+                        <div class="device__card-content">
+                            <div class="device__heading">
+                                <div>
+                                    <img
+                                        src="./Images/Icons/playstion.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <h3>Gaming Consoles</h3>
+                            </div>
+                            <p>
+                                StreamVibe is optimized for both Android and iOS
+                                smartphones. Download our app from the Google
+                                Play Store or the Apple App Store
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="device__card" data-aos="fade-up-left">
+                        <img
+                            class="device__img"
+                            src="./Images/Card.webp"
+                            alt=""
+                        />
+                        <div class="device__card-content">
+                            <div class="device__heading">
+                                <div>
+                                    <img src="./Images/Icons/vr.svg" alt="" />
+                                </div>
+                                <h3>VR Headsets</h3>
+                            </div>
+                            <p>
+                                StreamVibe is optimized for both Android and iOS
+                                smartphones. Download our app from the Google
+                                Play Store or the Apple App Store
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Device -->
+            <!-- FAQ -->
+            <section class="faq container">
+                <div class="faq__content">
+                    <div>
+                        <h3>Frequently Asked Questions</h3>
+                        <p>
+                            Got questions? We've got answers! Check out our FAQ
+                            section to find answers to the most common questions
+                            about StreamVibe.
+                        </p>
+                    </div>
+                    <a href="#" class="btn">
+                        <span>Ask a Question</span>
+                    </a>
+                </div>
+                <div
+                    class="faq__wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <div class="faq__section" data-aos="fade-right">
+                        <div class="card">
+                            <div class="faq__card">
+                                <div first>01</div>
+                                <div second>
+                                    <h4>What is StreamVibe?</h4>
+                                </div>
+                                <img src="./Images/plus.svg" alt="plus" />
+                                <img
+                                    src="./Images/Icons/hr.svg"
+                                    alt="minus"
+                                    class="d-none"
+                                />
+                            </div>
+                            <img img src="./Images/hr.svg" alt="" />
+                        </div>
+                        <div class="card">
+                            <div class="faq__card">
+                                <div first>02</div>
+                                <div second>
+                                    <h4>How much does StreamVibe cost?</h4>
+                                </div>
+                                <img src="./Images/plus.svg" alt="plus" />
+                                <img
+                                    src="./Images/Icons/hr.svg"
+                                    alt="minus"
+                                    class="d-none"
+                                />
+                            </div>
+                            <img img src="./Images/hr.svg" alt="" />
+                        </div>
+                        <div class="card">
+                            <div class="faq__card">
+                                <div first>03</div>
+                                <div second>
+                                    <h4>
+                                        What content is available on StreamVibe?
+                                    </h4>
+                                </div>
+                                <img src="./Images/plus.svg" alt="plus" />
+                                <img
+                                    src="./Images/Icons/hr.svg"
+                                    alt="minus"
+                                    class="d-none"
+                                />
+                            </div>
+                            <img img src="./Images/hr.svg" alt="" />
+                        </div>
+                        <div class="card">
+                            <div class="faq__card">
+                                <div first>04</div>
+                                <div second>
+                                    <h4>How can I watch StreamVibe?</h4>
+                                </div>
+                                <img src="./Images/plus.svg" alt="plus" />
+                                <img
+                                    src="./Images/Icons/hr.svg"
+                                    alt="minus"
+                                    class="d-none"
+                                />
+                            </div>
+                            <img
+                                img
+                                class="faq__img"
+                                src="./Images/hr.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="faq__section" data-aos="fade-left">
+                        <div class="card">
+                            <div class="faq__card">
+                                <div first>05</div>
+                                <div second>
+                                    <h4>How do I sign up for StreamVibe?</h4>
+                                </div>
+                                <img src="./Images/plus.svg" alt="plus" />
+                                <img
+                                    src="./Images/Icons/hr.svg"
+                                    alt="minus"
+                                    class="d-none"
+                                />
+                            </div>
+                            <img img src="./Images/hr.svg" alt="" />
+                        </div>
+                        <div class="card">
+                            <div class="faq__card">
+                                <div first>06</div>
+                                <div second>
+                                    <h4>What is the StreamVibe free trial?</h4>
+                                </div>
+                                <img src="./Images/plus.svg" alt="plus" />
+                                <img
+                                    src="./Images/Icons/hr.svg"
+                                    alt="minus"
+                                    class="d-none"
+                                />
+                            </div>
+                            <img img src="./Images/hr.svg" alt="" />
+                        </div>
+                        <div class="card">
+                            <div class="faq__card">
+                                <div first>07</div>
+                                <div second>
+                                    <h4>
+                                        How do I contact StreamVibe customer
+                                        support?
+                                    </h4>
+                                </div>
+                                <img src="./Images/plus.svg" alt="plus" />
+                                <img
+                                    src="./Images/Icons/hr.svg"
+                                    alt="minus"
+                                    class="d-none"
+                                />
+                            </div>
+                            <img img src="./Images/hr.svg" alt="" />
+                        </div>
+                        <div class="card">
+                            <div class="faq__card">
+                                <div first>08</div>
+                                <div second>
+                                    <h4>
+                                        What are the StreamVibe payment methods?
+                                    </h4>
+                                </div>
+                                <img src="./Images/plus.svg" alt="plus" />
+                                <img
+                                    src="./Images/Icons/hr.svg"
+                                    alt="minus"
+                                    class="d-none"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FAQ -->
+            <!-- Price -->
+            <section class="price container">
+                <div class="price__content">
+                    <div>
+                        <h3>Choose the plan that's right for you</h3>
+                        <p>
+                            Join StreamVibe and select from our flexible
+                            subscription options tailored to suit your viewing
+                            preferences. Get ready for non-stop entertainment!
+                        </p>
+                    </div>
+                    <div second data-price>
+                        <span class="active">Monthly</span>
+                        <span>Yearly</span>
+                    </div>
+                </div>
+                <div
+                    class="price__wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <div class="price__card" data-aos="fade-right">
+                        <div class="price__heading">
+                            <h4>Basic Plan</h4>
+                            <p>
+                                Enjoy an extensive library of movies and shows,
+                                featuring a range of content, including recently
+                                released titles.
+                            </p>
+                        </div>
+                        <div second>$9.99<span>/month</span></div>
+                        <div class="price__btns">
+                            <a href="#">Start Free Trial</a>
+                            <a href="#" second>Choose Plan</a>
+                        </div>
+                    </div>
+                    <div
+                        class="price__card"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"
+                    >
+                        <div class="price__heading">
+                            <h4>Standard Plan</h4>
+                            <p>
+                                Access to a wider selection of movies and shows,
+                                including most new releases and exclusive
+                                content
+                            </p>
+                        </div>
+                        <div second>$12.99<span>/month</span></div>
+                        <div class="price__btns">
+                            <a href="#">Start Free Trial</a>
+                            <a href="#" second>Choose Plan</a>
+                        </div>
+                    </div>
+                    <div class="price__card" data-aos="fade-left">
+                        <div class="price__heading">
+                            <h4>Premium Plan</h4>
+                            <p>
+                                Access to a widest selection of movies and
+                                shows, including all new releases and Offline
+                                Viewing
+                            </p>
+                        </div>
+                        <div second>$14.99<span>/month</span></div>
+                        <div class="price__btns">
+                            <a href="#">Start Free Trial</a>
+                            <a href="#" second>Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Price -->
+            <!-- Plans -->
+            <section class="plan container">
+                <div class="plan__contents">
+                    <h5>Compare our plans and find the right one for you</h5>
+                    <p>
+                        StreamVibe offers three different plans to fit your
+                        needs: Basic, Standard, and Premium. Compare the
+                        features of each plan and choose the one that's right
+                        for you.
+                    </p>
+                </div>
+                <div
+                    class="plan__main"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <div class="plan__head">
+                        <div>
+                            <p>Features</p>
+                        </div>
+                        <div>
+                            <p>Basic</p>
+                        </div>
+                        <div flex>
+                            <p>Standard</p>
+                            <span>Popular</span>
+                        </div>
+                        <div>
+                            <p>Premium</p>
+                        </div>
+                    </div>
+                    <div class="plan__price">
+                        <div>Price</div>
+                        <div>$9.99/Month</div>
+                        <div>$12.99/Month</div>
+                        <div>$14.99/Month</div>
+                    </div>
+                    <div class="plan__content">
+                        <div>Content</div>
+                        <div>
+                            Access to a wide selection of movies and shows,
+                            including some new releases.
+                        </div>
+                        <div>
+                            Access to a wider selection of movies and shows,
+                            including most new releases and exclusive content
+                        </div>
+                        <div>
+                            Access to a widest selection of movies and shows,
+                            including all new releases and Offline Viewing
+                        </div>
+                    </div>
+                    <div class="plan__device">
+                        <div>Free Trail</div>
+                        <div>7 Days</div>
+                        <div>7 Days</div>
+                        <div>7 Days</div>
+                    </div>
+                    <div class="plan__cancel">
+                        <div>Cancel Anytime</div>
+                        <div>Yes</div>
+                        <div>Yes</div>
+                        <div>Yes</div>
+                    </div>
+                    <div class="plan__cancel">
+                        <div>HDR</div>
+                        <div>No</div>
+                        <div>Yes</div>
+                        <div>Yes</div>
+                    </div>
+                    <div class="plan__cancel">
+                        <div>Dolby Atmos</div>
+                        <div>No</div>
+                        <div>Yes</div>
+                        <div>Yes</div>
+                    </div>
+                    <div class="plan__cancel">
+                        <div>Ad - Free</div>
+                        <div>No</div>
+                        <div>Yes</div>
+                        <div>Yes</div>
+                    </div>
+                    <div class="plan__cancel">
+                        <div>Offline Viewing</div>
+                        <div>No</div>
+                        <div>Yes, for select titles.</div>
+                        <div>Yes, for all titles.</div>
+                    </div>
+                    <div class="plan__cancel">
+                        <div>Family Sharing</div>
+                        <div>No</div>
+                        <div>Yes, up to 5 family members.</div>
+                        <div>Yes, up to 6 family members.</div>
+                    </div>
+                </div>
+            </section>
+            <!-- Plans -->
+            <!-- Contact -->
+            <section class="contact container">
+                <div class="contact__contents" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="contact__content">
+                        <h5>Welcome to our support page!</h5>
+                        <p>
+                            We're here to help you with any problems you may be
+                            having with our product.
+                        </p>
+                    </div>
+                    <div class="contact__wrapper">
+                        <div class="contact__cards">
+                            <div first></div>
+                            <div first></div>
+                            <div first></div>
+                            <div first></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="contact__card" names>
+                        <div div>
+                            <h4>First Name</h4>
+                            <input type="text" placeholder="Enter First Name" />
+                        </div>
+                        <div div>
+                            <h4>Last Name</h4>
+                            <input type="text" placeholder="Enter Last Name" />
+                        </div>
+                    </div>
+                    <div class="contact__card" email>
+                        <div div>
+                            <h4>Email</h4>
+                            <input
+                                type="email"
+                                placeholder="Enter your Email"
+                            />
+                        </div>
+                        <div number>
+                            <h4>Phone Number</h4>
+                            <div>
+                                <div>
+                                    <img
+                                        src="./Images/Icons/flag.svg"
+                                        alt="flag"
+                                    />
+                                </div>
+                                <input class="phone" type="tel" value="+9989" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__card" textarea>
+                        <h4>Message</h4>
+                        <textarea placeholder="Enter your Message"></textarea>
+                    </div>
+                    <div class="contact__card" checkbox>
+                        <label for="checkbox" class="form-control">
+                            <p>I agree with Terms of Use and Privacy Policy</p>
+                            <input
+                                type="checkbox"
+                                name="checkbox"
+                                id="checkbox"
+                            />
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <a href="#"> Send Message</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact -->
+            <!-- Content -->
+            <section class="content container">
+                <div
+                    class="content__wrapper"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <div first>
+                        <div>
+                            <h4>Start your free trial today!</h4>
+                            <p>
+                                This is a clear and concise call to action that
+                                encourages users to sign up for a free trial of
+                                StreamVibe.
+                            </p>
+                        </div>
+                        <a href="#">Start a Free Trail</a>
+                    </div>
+                    <div class="content__imgs">
+                        <img
+                            class="first-img"
+                            src="./Images/Fade Out Left.svg"
+                            alt=""
+                        />
+                        <div second>
+                            <div data-first class="div"></div>
+                            <div data-second class="div"></div>
+                            <div data-thrind class="div"></div>
+                            <div data-fourth class="div"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Content -->
+        </main>
+        <!-- Footer -->
+        <footer class="footer container">
+            <div class="footer__first">
+                <div one class="footer__div">
+                    <h5>Home</h5>
+                    <ul>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Devices</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div two class="footer__div">
+                    <h5>Movies</h5>
+                    <ul>
+                        <li><a href="#">Gernes</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">New Release</a></li>
+                        <li><a href="#">Popular</a></li>
+                    </ul>
+                </div>
+                <div three class="footer__div">
+                    <h5>Shows</h5>
+                    <ul>
+                        <li><a href="#">Gernes</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">New Release</a></li>
+                        <li><a href="#">Popular</a></li>
+                    </ul>
+                </div>
+                <div four class="footer__div">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div five class="footer__div">
+                    <h5>Subscription</h5>
+                    <ul>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Features</a></li>
+                    </ul>
+                </div>
+                <div six class="footer__div">
+                    <h5>Connect With Us</h5>
+                    <div class="footer__btns">
+                        <a href="https://t.me/designerwithair" target="_blank"
+                            ><img src="./Images/Icons/telegram.svg" alt=""
+                        /></a>
+                        <a href="tel:+998991234567" target="_blank"
+                            ><img src="./Images/Icons/call.svg" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="./Images/Icons/in.svg" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__second">
+                <h5>@2024 Streamvibe, All Rights Reserved</h5>
+                <ul>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Policy</li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Footer -->
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="./Js/heroDB.js"></script>
+        <script src="./Js/categoryDB.js"></script>
+        <script src="./Js/script.js"></script>
+        <script>
+            AOS.init();
+            const phoneInput = document.querySelector(".phone");
+            phoneInput.addEventListener("input", function (e) {
+                this.value = this.value.replace(/[^0-9+]/g, "");
+                if (this.value.indexOf("+") > 0) {
+                    this.value = this.value.replace(/\+/g, "");
+                    this.value = "+" + this.value;
+                }
+            });
+        </script>
+    </body>
+</html>

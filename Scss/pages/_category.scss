@@ -1,0 +1,225 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.category {
+    padding: 140px 129px 0px 129px;
+
+    &__content {
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        h2 {
+            color: #fff;
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        p {
+            color: #999999;
+            font-size: 18px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .card-wrapper {
+        position: relative;
+        display: none;
+    }
+
+    .card-carousel.dragging {
+        cursor: grab;
+        scroll-behavior: auto;
+    }
+
+    .card-carousel.dragging .category__card {
+        pointer-events: none;
+    }
+
+    .card-carousel {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+
+        .arrow {
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+            font-size: 12px;
+            text-align: center;
+            line-height: 40px;
+            background-color: #141414;
+            border-radius: 50%;
+
+            i {
+                color: #fff;
+            }
+        }
+
+        .arrow.left {
+            position: absolute;
+            left: -10px;
+            z-index: 999;
+        }
+
+        .arrow.right {
+            position: absolute;
+            right: -10px;
+            z-index: 999;
+        }
+
+        .category__card {
+            padding: 15px;
+            .abs {
+                width: 150px;
+            }
+            .div {
+                img {
+                    width: 66.7px;
+                    height: 67.5px;
+                }
+            }
+            .span {
+                font-size: 14px;
+            }
+            a {
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    &__card {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #262626;
+        border-radius: 12px;
+        gap: 10px;
+        background-color: #1a1a1a;
+    }
+
+    &__imgs {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .abs {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}
+
+@include mixins.media-xxl {
+    .category {
+        padding: 50px 74px 0px 74px;
+
+        &__content {
+            margin-bottom: 60px;
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        &__wrapper {
+            gap: 20px;
+        }
+
+        &__card {
+            padding: 24px;
+            border-radius: 10px;
+            gap: 5px;
+        }
+
+        &__imgs {
+            gap: 5px;
+
+            .abs {
+                width: 200px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            div {
+                gap: 5px;
+
+                img {
+                    width: 93.4px;
+                    height: 102.5px;
+                }
+            }
+        }
+    }
+}
+
+@include mixins.media-sm {
+    .category {
+        padding: 40px 16px 0;
+
+        &__content {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .caruosel,
+        &__wrapper {
+            display: none;
+        }
+
+        .card-wrapper {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,246 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.contact {
+    padding: 150px 129px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__contents {
+        width: 533px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        h5 {
+            font-size: 38px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #999;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        height: 477px;
+        border: 2px solid #262626;
+        background-color: #0f0f0f;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    &__cards {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        div[first] {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            div {
+                width: 135.25px;
+                height: 168.25px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 12px;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        border: 1px solid #262626;
+        padding: 50px;
+        background-color: #0f0f0f;
+        border-radius: 12px;
+
+        div[div] {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            input {
+                height: 67px;
+                width: 413px;
+                padding: 20px;
+                color: #999;
+                font-size: 18px;
+                font-weight: 400;
+                background-color: #141414;
+                border: 1px solid #262626;
+                border-radius: 8px;
+            }
+        }
+
+        [names] {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        [number] {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            h4 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            h4 ~ div {
+                height: 67px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                div {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px 12px;
+                    border: 1px solid #262626;
+                    background-color: #141414;
+                    border-radius: 8px;
+                }
+
+                input {
+                    height: 100%;
+                    width: 333px;
+                    padding: 20px;
+                    color: #999;
+                    font-size: 18px;
+                    font-weight: 400;
+                    background-color: #141414;
+                    border: 1px solid #262626;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        [textarea] {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 16px;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            textarea {
+                width: 100%;
+                height: 163px;
+                padding: 20px;
+                font-size: 18px;
+                font-weight: 400;
+                color: #999;
+                background-color: #141414;
+                border: 1px solid #262626;
+                border-radius: 8px;
+                resize: none;
+                outline: none;
+            }
+        }
+
+        [checkbox] {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .form-control {
+                position: relative;
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+
+                input:checked ~ .custom-checkbox:after {
+                    display: block;
+                }
+                .custom-checkbox {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 28px;
+                    width: 28px;
+                    border-radius: 4px;
+                    border: 1px solid #262626;
+                    background-color: #0f0f0f;
+                }
+                .custom-checkbox:after {
+                    left: 10px;
+                    top: 3px;
+                    width: 6px;
+                    height: 12px;
+                    border: solid #fff;
+                    border-width: 0 3px 3px 0;
+                    transform: rotate(45deg);
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+                p {
+                    width: max-content;
+                    position: relative;
+                    left: 38px;
+                    color: #999;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 18px 24px;
+                border-radius: 8px;
+                background-color: #E50000;
+                color: #fff;
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 876px;
+    }
+}

@@ -1,0 +1,227 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.faq {
+    padding: 150px 129px 0;
+
+    &__content {
+        margin-bottom: 80px;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+
+        h3 {
+            color: #fff;
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        p {
+            color: #999;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        position: relative;
+        padding: 34px;
+
+        [img] {
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+
+        [first] {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            width: max-content;
+            border: 1px solid #262626;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        [second] {
+            width: 547px;
+            
+            h4 {
+                transition: .3s ease-out;
+                font-size: 22px;
+                font-weight: 500;
+                color: #fff;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: #999;
+                width: 558px;
+            }
+        }
+    }
+
+    .d-none {
+        display: none;
+    }
+}
+
+@include mixins.media-xxl {
+    .faq {
+        padding: 120px 74px 0;
+
+        &__content {
+            margin-bottom: 60px;
+
+            h3 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        &__img {
+            display: none;
+        }
+
+        .card {
+            padding: 24px;
+        }
+
+        &__card {
+            gap: 16px;
+
+            [first] {
+                padding: 16px;
+                border-radius: 8px;
+                font-size: 16px;
+            }
+
+            [second] {
+                width: 466px;
+
+                h4 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    width: 466px;
+                }
+            }
+        }
+    }
+}
+
+@include mixins.media-sm {
+    .faq {
+        padding: 80px 16px 0;
+        
+        &__content {
+            position: relative;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+    
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+
+            .btn {
+                display: none;
+            }
+        }
+
+        &__img {
+            display: block;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            width: 100%;
+            padding: 20px 10px;
+    
+            [img] {
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &__card {
+            gap: 16px;
+            
+            [first] {
+                padding: 12px;
+                border: 1px solid #262626;
+                border-radius: 6px;
+                font-size: 16px;
+            }
+            
+            [second] {
+                width: 230px;
+    
+                h4 {
+                    font-size: 18px;
+                }
+    
+                p {
+                    font-size: 14px;
+                    width: 100%;
+                }
+            }
+
+            [second] ~ img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,222 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.device {
+    padding: {
+        top: 150px;
+        left: 129px;
+        right: 129px;
+    }
+
+    &__content {
+        margin-bottom: 80px;
+
+        h2 {
+            font-size: 38px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 14px;
+        }
+
+        p {
+            color: #999999;
+            font-size: 18px;
+            font-weight: 400;
+            width: 1230px;
+        }
+
+        span.p {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 45px 0;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        position: relative;
+        border: 1px solid #262626;
+        padding: 50px;
+        border-radius: 12px;
+
+        p {
+            color: #999999;
+            font-size: 18px;
+            font-weight: 400;
+            width: 412px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__card-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 40px;
+
+        div {
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+            border-radius: 12px;
+            background-color: #141414;
+            border: 1px solid #1f1f1f;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+}
+
+@include mixins.media-xxl {
+    .device {
+        padding: {
+            top: 120px;
+            left: 74px;
+            right: 74px;
+        }
+
+        &__content {
+            margin-bottom: 60px;
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                width: 1129px;
+            }
+
+            span.p {
+                display: none;
+            }
+        }
+
+        &__wrapper {
+            gap: 20px 0;
+        }
+
+        &__card {
+            padding: 40px;
+            border-radius: 10px;
+
+            p {
+                font-size: 16px;
+                width: 333px;
+            }
+        }
+
+        &__img {
+            width: 413px;
+            height: 241px;
+        }
+
+        &__heading {
+            gap: 12px;
+            margin-bottom: 40px;
+
+            div {
+                padding: 12px;
+                border-radius: 10px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@include mixins.media-sm {
+    .device {
+        padding: {
+            top: 100px;
+            left: 16px;
+            right: 16px;
+        }
+
+        &__content {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                display: none;
+            }
+
+            span.p {
+                display: block;
+                font-size: 14px;
+                width: 361px;
+                color: #999999;
+                font-weight: 400;
+            }
+        }
+
+        &__wrapper {
+            gap: 20px 0;
+        }
+
+        &__card {
+            width: 100%;
+            padding: 24px;
+            border-radius: 10px;
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                width: 100%;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        &__heading {
+            gap: 10px;
+            margin-bottom: 20px;
+
+            div {
+                padding: 10px;
+                border-radius: 8px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+}

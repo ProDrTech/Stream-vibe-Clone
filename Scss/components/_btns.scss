@@ -1,0 +1,30 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 18px 24px;
+    border-radius: 8px;
+    background-color: #E50000;
+    width: max-content;
+
+    span {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+}
+
+@include mixins.media-xxl {
+    .btn {
+        padding: 14px 20px;
+        border-radius: 6px;
+    
+        span {
+            font-size: 14px;
+        }
+    }
+}

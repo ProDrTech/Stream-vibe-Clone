@@ -1,0 +1,20 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.container {
+    width: 1903px;
+    margin: 0 auto;
+    background-color: #141414;
+}
+
+@include mixins.media-xxl {
+    .container {
+        width: 100%;
+    }
+}
+
+@include mixins.media-sm {
+    .container {
+        width: 100%;
+    }
+}
